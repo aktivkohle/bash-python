@@ -43,3 +43,12 @@ echo -en '\n' >> $logfile
 date -u >> $logfile
 
 echo -en '\n' >> $logfile
+
+echo shutting down!
+
+# let it sleep or shut it down
+# it should all be in a log file anyhow so unless there is something
+# in ram which is needed rather switch off.
+# Doesn't really come properly back to life anyway in Linux at the moment
+# systemctl suspend
+systemctl poweroff
